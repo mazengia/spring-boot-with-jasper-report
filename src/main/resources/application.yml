@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect : org.hibernate.dialect.MySQL8Dialect
+  database-platform:
+  config:
+    use-legacy-processing: true
+  datasource:
+    username: root
+    password:
+    url: "jdbc:mysql://${MYSQL_HOST:localhost}:3306/spring_jasper_report"
